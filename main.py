@@ -87,8 +87,44 @@ def main(image_path):
     plt.show()
 
 
-image_path = ".venv/images/1.jpg"
+image_path = ".venv/images/2.jpg"
 main(image_path)
+
+
+###(КАМЕРА НО ПЛОХО РАБОАЕТ)
+
+# face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_license_plate_rus_16stages.xml')
+#
+# cap = cv2.VideoCapture(0)
+#
+# while True:
+#     success, img = cap.read()
+#
+#     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+#
+#     faces = face_cascade.detectMultiScale(gray, 3, 5)
+#
+#     for (x, y, w, h) in faces:
+#         cv2.rectangle(img, (x, y), (x + w, y + h), (0, 0, 255), 2)
+#
+#     cv2.imshow("qw", img)
+#     if cv2.waitKey(1) & 0xFF == ord('q'):
+#         break
+#
+# cap.release()
+# cv2.destroyAllWindows()
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -96,7 +132,7 @@ main(image_path)
 ### Первая версия (Еще хуже чем 2)
 
 
-# img = cv2.imread('.venv/images/5.jpg')
+# img = cv2.imread('.venv/images/8.jpg')
 # gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 #
 # imgFilter = cv2.bilateralFilter(gray, 11, 15, 15)
@@ -133,5 +169,5 @@ main(image_path)
 # print(text)
 # # print(pos)
 #
-# pl.imshow(cv2.cvtColor(finalImg, cv2.COLOR_BGR2RGB))
-# pl.show()
+# plt.imshow(cv2.cvtColor(finalImg, cv2.COLOR_BGR2RGB))
+# plt.show()
